@@ -1,0 +1,2 @@
+# UsercentricsAssistantExtension
+Usercentrics browser extension
