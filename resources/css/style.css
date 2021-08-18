@@ -1,0 +1,27 @@
+body {
+  padding: 10px;
+  border: solid 15px #7eaae9;
+}
+
+#header-image {
+  padding: 20px;
+  font-family: Montserrat, montserrat, HelveticaNeue, Helvetica Neue,
+    Helvetica-Neue, helvetica, arial, sans-serif;
+}
+
+row {
+  padding: 5px;
+  margin: 5px;
+}
+
+button {
+  padding: 5px;
+  width: 70%;
+}
+
+#get-data-layer,
+#get-uc-data,
+#get-scripts,
+#get-consents {
+  padding: 5px;
+}

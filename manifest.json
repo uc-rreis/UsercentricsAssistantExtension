@@ -1,0 +1,38 @@
+{
+    "name": "Usercentrics Assistant",
+    "description": "Usercentrics implementation tool: get usercentrics config data, content of dataLayer variable, consents given and script tags in page and their adjustment level.",
+    "version": "1.1",
+    "minimum_chrome_version": "46",
+    "content_security_policy": {
+        "script-src": "self"
+    },
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "resources/img/uc-logo2.png"
+    },
+    "icons": {
+        "16": "resources/img/uc-logo.png",
+        "32": "resources/img/uc-logo.png",
+        "48": "resources/img/uc-logo.png",
+        "128": "resources/img/uc-logo.png"
+    },
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F",
+                "mac": "MacCtrl+Shift+F"
+            },
+            "description": "Opens Usercentrics Assistant"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "cookies"
+    ]
+}
