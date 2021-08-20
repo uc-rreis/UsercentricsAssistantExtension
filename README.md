@@ -2,6 +2,11 @@
 
 A new version of the Usercentrics browser extension.
 
+# Using the extension
+
+Click on the extension icon and then click on the appropriate button on the popup to get the information you require.
+You can view the output in the browser console.
+
 Changelog:
 
 - New UI added: click the respective button to get the info you need.
