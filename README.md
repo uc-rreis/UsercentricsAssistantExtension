@@ -1,23 +1,29 @@
 # UsercentricsAssistantExtension
+
 A new version of the Usercentrics browser extension.
 
 Changelog:
-* New UI added: click the respective button to get the info you need.
 
-* Config data does not include scripts info, which was moved to the Script Tags
+- New UI added: click the respective button to get the info you need.
 
+- Config data does not include scripts info, which was moved to View Script Tags
+
+- Data Layer info move to View Data Layer
+
+- Consents Info now in View Consents
+
+- New hotkey to launch the extension popup:
+  - _Ctrl+Shift+U_ for Windows systems
+  - _Command+Shift+U_ for Macs
 
 Features to come:
-* Show the Info in a Plugin Panel rather than the Web console
 
-* Include a Link to the Settings in AdminInterface
+- Show the Info in a Plugin Panel rather than the Web console
 
-* Launch preview with customer settingsId
+- Include a Link to the Settings in AdminInterface
 
-* Include a link to the Settings JSON
+- Launch preview with customer settingsId
 
-* Show the CMP for different countries
+- Include a link to the Settings JSON
 
-* Data Layer info
-
-
+- Show the CMP for different countries

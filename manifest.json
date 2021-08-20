@@ -1,38 +1,44 @@
 {
-    "name": "Usercentrics Assistant",
-    "description": "Usercentrics implementation tool: get usercentrics config data, content of dataLayer variable, consents given and script tags in page and their adjustment level.",
-    "version": "1.1",
-    "minimum_chrome_version": "46",
-    "content_security_policy": {
-        "script-src": "self"
-    },
-    "manifest_version": 3,
-    "action": {
-        "default_popup": "index.html",
-        "default_icon": "resources/img/uc-logo2.png"
-    },
-    "icons": {
-        "16": "resources/img/uc-logo.png",
-        "32": "resources/img/uc-logo.png",
-        "48": "resources/img/uc-logo.png",
-        "128": "resources/img/uc-logo.png"
-    },
-    "commands": {
-        "_execute_action": {
-            "suggested_key": {
-                "default": "Ctrl+Shift+F",
-                "mac": "MacCtrl+Shift+F"
-            },
-            "description": "Opens Usercentrics Assistant"
-        }
-    },
-    "background": {
-        "service_worker": "background.js"
-    },
-    "permissions": [
-        "storage",
-        "activeTab",
-        "scripting",
-        "cookies"
-    ]
+  "name": "Usercentrics Assistant",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Assistant to help in checking Usercentrics Implementation data.",
+  "homepage_url": "http://example.com",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Usercentrics Assistant",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "resources/img/uc-logo.png",
+      "32": "resources/img/uc-logo.png",
+      "48": "resources/img/uc-logo.png",
+      "128": "resources/img/uc-logo.png"
+    }
+  },
+  "icons": {
+    "16": "resources/img/uc-logo.png",
+    "32": "resources/img/uc-logo.png",
+    "48": "resources/img/uc-logo.png",
+    "128": "resources/img/uc-logo.png"
+  },
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs",
+    "storage",
+    "activeTab",
+    "declarativeContent"
+  ],
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+U",
+        "mac": "Command+Shift+U"
+      },
+      "description": "Opens popup"
+    }
+  }
 }
