@@ -1,6 +1,6 @@
 {
     "name": "Usercentrics Assistant",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "manifest_version": 2,
     "description": "Assistant to help in checking Usercentrics Implementation data.",
     "homepage_url": "http://example.com",

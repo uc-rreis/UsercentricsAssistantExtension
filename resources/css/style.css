@@ -1,6 +1,7 @@
 body {
     padding: 10px;
-    border: solid 15px #7cc7fa;
+    border: solid 5px #e7f3fa;
+    background-image: url(../img/background.jpeg);
 }
 
 #header-image {
@@ -25,4 +26,13 @@ button,
 #get-consents,
 #get-config {
     padding: 5px;
+}
+
+#btn-data-layer,
+#btn-consents,
+#btn-scripts,
+#btn-uc-data {
+    background-color: #0045a5;
+    color: white;
+    border-radius: 20px;
 }
