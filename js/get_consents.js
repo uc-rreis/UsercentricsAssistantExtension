@@ -2,6 +2,7 @@ getConsents()
 
 function getConsents() {
     var script = document.createElement('script');
+    let isV1 = true;
     script.setAttribute('id', 'get-consents')
     script.innerHTML = `/////  Usercentrics Assistant Code /////
     getConsents()
@@ -15,12 +16,23 @@ function getConsents() {
         console.clear();
 
         // Get Consents
-        var consents = UC_UI.getServices()
         var consentData = {}
 
-        consents.forEach((consent) => {
-            consentData[consent.name] = consent.consent.status;
-        })
+        let isV2 = typeof(UC_UI)
+        let isV1 = typeof(usercentrics)
+
+        if(isV2 != "undefined"){
+            var consents = UC_UI.getServices()
+            consents.forEach((consent) => {
+                consentData[consent.name] = consent.consent.status;
+            })
+        } else if(isV1 != "undefined") {
+            var consents = usercentrics.getConsents()
+            consents.forEach((consent) => {
+                consentData[consent.dataProcessor] = consent.consentStatus;
+            })
+        }
+        
     
         if (!consents) {
             console.log("%cNo Consents present!", errorStyles);
