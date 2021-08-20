@@ -11,6 +11,11 @@ var scripts = document.getElementsByTagName("script");
 for (var i = 0; i < scripts.length; i++) {
     script = scripts[i];
 
+    // Avoid picking up our inject extension scripts
+    if (script.innerHTML.includes("/////  Usercentrics Assistant Code /////")) {
+        continue;
+    }
+
     // Does script have type="text/plain"
     adjusted = script.type === "text/plain" ? i + ": Adjusted - Yes" : i + ": Adjusted - No";
     dataUC = script.getAttribute('data-usercentrics') ?

@@ -1,27 +1,28 @@
 body {
-  padding: 10px;
-  border: groove 15px #cde9e4;
+    padding: 10px;
+    border: solid 15px #c2effc;
 }
 
 #header-image {
-  padding: 20px;
-  font-family: Montserrat, montserrat, HelveticaNeue, Helvetica Neue,
-    Helvetica-Neue, helvetica, arial, sans-serif;
+    padding: 20px;
+    font-family: Montserrat, montserrat, HelveticaNeue, Helvetica Neue, Helvetica-Neue, helvetica, arial, sans-serif;
 }
 
 row {
-  padding: 5px;
-  margin: 5px;
+    padding: 5px;
+    margin: 5px;
 }
 
-button {
-  padding: 5px;
-  width: 70%;
+button,
+#config-data {
+    padding: 5px;
+    width: 70%;
 }
 
 #get-data-layer,
 #get-uc-data,
 #get-scripts,
-#get-consents {
-  padding: 5px;
+#get-consents,
+#get-config {
+    padding: 5px;
 }

@@ -13,8 +13,11 @@ Changelog:
 - Consents Info now in View Consents
 
 - New hotkey to launch the extension popup:
+
   - _Ctrl+Shift+U_ for Windows systems
   - _Command+Shift+U_ for Macs
+
+- New Icon
 
 Features to come:
 
