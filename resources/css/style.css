@@ -24,6 +24,7 @@ button,
 #get-uc-data,
 #get-scripts,
 #get-consents,
+#inject-cmp,
 #get-config {
     padding: 5px;
 }
@@ -31,8 +32,9 @@ button,
 #btn-data-layer,
 #btn-consents,
 #btn-scripts,
-#btn-uc-data {
+#btn-uc-data,
+#btn-inject-cmp {
     background-color: #0045a5;
     color: white;
-    border-radius: 20px;
+    border-radius: 5px;
 }

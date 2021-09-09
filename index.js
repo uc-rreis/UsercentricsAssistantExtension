@@ -2,6 +2,7 @@ let uc_data = document.getElementById("btn-uc-data");
 let uc_scripts = document.getElementById("btn-scripts");
 let uc_consents = document.getElementById("btn-consents");
 let uc_data_layer = document.getElementById("btn-data-layer");
+let uc_inject_cmp = document.getElementById("btn-inject-cmp");
 let div = document.getElementById('config-data');
 let count = 0;
 
@@ -46,6 +47,16 @@ uc_consents.onclick = function() {
 
         chrome.tabs.executeScript(
             tabs[0].id, { file: 'js/get_consents.js' }
+        );
+    });
+}
+
+uc_inject_cmp.onclick = function() {
+    let queryOptions = { active: true, currentWindow: true };
+    chrome.tabs.query(queryOptions, (tabs) => {
+
+        chrome.tabs.executeScript(
+            tabs[0].id, { file: 'js/inject_cmp.js' }
         );
     });
 }

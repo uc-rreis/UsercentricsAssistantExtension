@@ -41,7 +41,6 @@ for (var i = 0; i < scripts.length; i++) {
         // SettingsId
         ucData.SettingsId = script.getAttribute("data-settings-id");
 
-
         // V1
     } else if (script.src.includes("https://app.usercentrics.eu/latest/main.js")) {
         isV1 = true;
