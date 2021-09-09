@@ -11,11 +11,11 @@ Changelog:
 
 - New UI added: click the respective button to get the info you need.
 
-- Config data does not include scripts info, which was moved to View Script Tags
+- Config data does not include scripts info, which was moved to Scripts
 
-- Data Layer info move to View Data Layer
+- Data Layer info moved to Data Layer
 
-- Consents Info now in View Consents
+- Consents Info now in Consents
 
 - New hotkey to launch the extension popup:
 
@@ -23,6 +23,7 @@ Changelog:
   - _Command+Shift+U_ for Macs
 
 - New Icon
+
 
 Features to come:
 
@@ -35,3 +36,5 @@ Features to come:
 - Include a link to the Settings JSON
 
 - Show the CMP for different countries
+
+- New functionality of injecting Web CMP onto any page (can be used for visual demoing purposes)
