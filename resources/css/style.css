@@ -9,7 +9,7 @@ body {
     font-family: Montserrat, montserrat, HelveticaNeue, Helvetica Neue, Helvetica-Neue, helvetica, arial, sans-serif;
 }
 
-row {
+.row {
     padding: 5px;
     margin: 5px;
 }
@@ -24,7 +24,6 @@ button,
 #get-uc-data,
 #get-scripts,
 #get-consents,
-#inject-cmp,
 #get-config {
     padding: 5px;
 }
@@ -32,12 +31,30 @@ button,
 #btn-data-layer,
 #btn-consents,
 #btn-scripts,
-#btn-uc-data,
-#btn-inject-cmp {
+#btn-uc-data {
     background-color: #157cac;
     color: rgb(243, 249, 250);
     border-radius: 12px;
     border-color: rgb(233, 222, 248);
     font-size: 14px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#btn-inject-cmp {
+    width: 100px;
+    background-color: #157cac;
+    color: rgb(243, 249, 250);
+    border-color: rgb(233, 222, 248);
+    border-radius: 7px;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 35px;
+}
+
+#get-settingsid {
+    width: 100px;
+    border-color: rgb(233, 222, 248);
+    border-radius: 7px;
+    text-align: center;
+    height: 35px;
 }

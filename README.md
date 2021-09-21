@@ -24,6 +24,7 @@ Changelog:
 
 - New Icon
 
+- Inject SDP script onto any page (harcoded settingsId -- will be made variable in the future, so one can inject any settingsID one wishes)
 
 Features to come:
 
@@ -38,3 +39,5 @@ Features to come:
 - Show the CMP for different countries
 
 - New functionality of injecting Web CMP onto any page (can be used for visual demoing purposes)
+
+- Inject SDP script onto any page (variable settingsId)
