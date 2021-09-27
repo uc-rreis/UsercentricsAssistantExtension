@@ -23,9 +23,12 @@ for (var i = 0; i < scripts.length; i++) {
     script = scripts[i];
 
     // V2
-    if (script.hasAttribute("data-settings-id")) {
+    if (script.getAttribute("id") === 'usercentrics-cmp') {
         isV2 = true;
         // Check Legacy script -- CMP Version
+        if (script.src.includes("loader.js")) {
+            ucData.Version = "V2 - loader.js";
+        }
         if (script.src.includes("bundle.js")) {
             ucData.Version = "V2 - Not Legacy";
         } else if (script.src.includes("bundle_legacy.js")) {

@@ -58,3 +58,7 @@ button,
     text-align: center;
     height: 35px;
 }
+
+#inject-cmp {
+    margin-left: 5px;
+}

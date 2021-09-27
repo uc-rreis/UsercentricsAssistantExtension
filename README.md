@@ -26,6 +26,8 @@ Changelog:
 
 - Inject SDP script onto any page (hardcoded settingsId -- will be made variable in the future, so one can inject any settingsID one wishes)
 
+- Support for loader.js script
+
 Features to come:
 
 - Show the Info in a Plugin Panel rather than the Web console
